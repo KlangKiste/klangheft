@@ -1,0 +1,5 @@
+Ukulele: Tenor-Ukulele „Flight Fireball“ aus dem FreePats-Projekt, aufgenommen von Mateusz Dąbrowski, 2026.
+https://github.com/freepats/ukulele1
+Lizenz: Creative Commons CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+Für Klangheft auf den Anschlag zugeschnitten, nachgestimmt, auf 3 Sekunden gekürzt und ausgeblendet, in der Lautstärke
+angeglichen und als MP3 gespeichert. Die Dateien heißen nach der MIDI-Nummer ihres Tons (tenor_60 = c′).

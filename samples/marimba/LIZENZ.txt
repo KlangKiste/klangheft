@@ -1,0 +1,4 @@
+Marimba (Outrigger, mittlere Lautstärke) aus der Versilian Community Sample Library (VCSL) von Versilian Studios LLC, https://github.com/sgossner/VCSL
+Lizenz: CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+Für Klangheft auf den Anschlag zugeschnitten, nachgestimmt, angeglichen, gekürzt, ausgeblendet und als MP3 gespeichert.
+Die Dateien heißen nach der MIDI-Nummer ihres Tons.

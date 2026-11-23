@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Klangheft – Musik untersuchen und machen</title>
+  <meta name="description" content="Musik im Unterricht untersuchen: Musikdatei öffnen, Teile markieren und benennen. Kostenlos, ohne Anmeldung, alles bleibt auf dem Gerät. Ein Angebot von KreaS.">
+  <meta name="theme-color" content="#c9a473">
+  <!-- Als Web-App auf dem Home-Bildschirm (iPad) oder im Dock (Mac) möglich. Achtung: Die App hat einen eigenen Speicher,
+       Arbeiten aus Safari kommen nur über „Alle sichern“ und „Datei öffnen“ hinüber. Deshalb rät Klangheft nicht dazu. -->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Klangheft">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- Symbol: rote Note aus Tonpapier auf Kork (Vorlage public/prototype/app-symbol.html, Entwurf C) -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./favicon-32.png" type="image/png" sizes="32x32">
+  <script>
+    // Farbschema vor dem ersten Rendern setzen: im Browser standardmäßig hell wie ein Musikheft,
+    // „Dunkel“ oder „Automatisch“ (wie das Gerät) nur, wenn jemand es gewählt hat.
+    // Die App vom Home-Bildschirm folgt dagegen von Anfang an dem Gerät, wie andere Apps auch
+    var app = navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
+    var t = app ? 'auto' : 'light';
+    try { t = localStorage.getItem('klangheft-theme') || t; } catch (e) {}
+    if (t !== 'auto') document.documentElement.dataset.theme = t === 'dark' ? 'dark' : 'light';
+    // Browserleiste in der Farbe des Korktischs (wie --kork), sonst liegt über der dunklen Seite ein heller Balken. Später setzt sie ui.ts
+    var dark = t === 'dark' || (t === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+    if (dark) document.querySelector('meta[name="theme-color"]').setAttribute('content', '#263230');
+  </script>
+  <script>
+    // Kommt Klangheft nicht hoch (WLAN überlastet, Skript nicht geladen, Browser zu alt), stünde sonst nur der leere Kork da.
+    // Dann nach einer Weile oder sofort beim Ladefehler einen Zettel zeigen. main.ts ruft klangheftStart(), sobald es läuft
+    (function () {
+      var fertig = false, zettel = null;
+      function zeigen() {
+        if (fertig || zettel || !document.body) return;
+        zettel = document.createElement('div');
+        zettel.setAttribute('role', 'alert');
+        zettel.style.cssText = 'position:fixed;left:50%;top:40%;transform:translate(-50%,-50%) rotate(-1deg);max-width:calc(100% - 32px);width:420px;box-sizing:border-box;padding:24px;background:#fbf6ea;color:#2b2b2b;font:18px/1.45 Andika,system-ui,sans-serif;box-shadow:2px 4px 10px rgba(0,0,0,.35);z-index:99';
+        zettel.innerHTML = '<p style="margin:0 0 8px;font-weight:700">Klangheft lädt nicht.</p>'
+          + '<p style="margin:0 0 16px">Vielleicht ist das WLAN gerade voll. Warte einen Moment und lade die Seite neu.</p>';
+        var knopf = document.createElement('button');
+        knopf.textContent = 'Neu laden';
+        knopf.style.cssText = 'min-height:44px;padding:8px 20px;font:inherit;font-weight:700;background:#e9dcb8;color:inherit;border:0;border-radius:0;box-shadow:1px 2px 4px rgba(0,0,0,.3);cursor:pointer';
+        knopf.onclick = function () { location.reload(); };
+        zettel.appendChild(knopf);
+        document.body.appendChild(zettel);
+      }
+      var uhr = setTimeout(zeigen, 20000);
+      window.klangheftStart = function () { fertig = true; clearTimeout(uhr); if (zettel) zettel.remove(); };
+      // Skript oder Stil der App nicht angekommen (nur Dateien von hier, keine Fehler aus YouTube oder Bildern)
+      addEventListener('error', function (e) {
+        var t = e.target;
+        if (t && (t.tagName === 'SCRIPT' || (t.tagName === 'LINK' && t.rel === 'stylesheet'))) setTimeout(zeigen, 0);
+      }, true);
+    })();
+  </script>
+  <style>
+    /* Grundfarbe schon vor dem Stylesheet (Kork wie --kork), sonst blitzt die App beim Start auf */
+    html { background: #c9a473; }
+    html[data-theme="dark"] { background: #263230; }
+    @media (prefers-color-scheme: dark) { html:not([data-theme]) { background: #263230; } }
+  </style>
+  <script type="module" crossorigin src="./assets/index-BTcl4hGB.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D8AGlYja.css">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><p style="padding:24px">Klangheft braucht JavaScript. Bitte im Browser aktivieren.</p></noscript>
+</body>
+</html>

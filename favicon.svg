@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Tab-Symbol: die rote Note auf Kork, vereinfacht (ohne Fähnchen und Klebeband, damit sie auch 16 px groß als Note lesbar ist) -->
+  <defs>
+    <filter id="schatten" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="8" dy="12" stdDeviation="6" flood-color="#1d1a16" flood-opacity=".35"/></filter>
+    <clipPath id="rund"><rect width="512" height="512" rx="115"/></clipPath>
+  </defs>
+  <g clip-path="url(#rund)">
+    <rect width="512" height="512" fill="#c9a473"/>
+    <g fill="#d6452e" filter="url(#schatten)">
+      <polygon points="96,350 160,296 246,284 300,318 296,388 240,440 156,454 92,426 74,384"/>
+      <polygon points="250,330 304,320 318,64 270,70"/>
+    </g>
+  </g>
+</svg>

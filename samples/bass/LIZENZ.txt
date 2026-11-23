@@ -1,0 +1,6 @@
+Elektrischer Bass: Karoryfer Samples (https://www.karoryfer.com/karoryfer-samples)
+Zusammengestellt in „tonejs-instruments“ von Nicholaus Brosowsky, https://github.com/nbrosowsky/tonejs-instruments
+Lizenz der Aufnahmen dort: Creative Commons Attribution 3.0 (CC BY 3.0), https://creativecommons.org/licenses/by/3.0/
+Für Klangheft auf den Anschlag zugeschnitten, um wenige Cent nachgestimmt, in der Lautstärke angeglichen,
+gekürzt und ausgeblendet und als MP3 gespeichert. Die Dateien heißen nach der MIDI-Nummer ihres Tons.
+Diese bearbeiteten Dateien stehen ebenfalls unter CC BY 3.0.

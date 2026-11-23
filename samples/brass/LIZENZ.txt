@@ -1,0 +1,4 @@
+Synth: Brass – für Klangheft selbst gebaut im Klang-Labor der Hörseite (Web Audio, im Browser erzeugt), Hall schon darin.
+Keine fremden Presets oder Aufnahmen. Die Dateien sind gemeinfrei: Creative Commons CC0 1.0,
+https://creativecommons.org/publicdomain/zero/1.0/
+Je Ton 1 Sekunde gehalten, 2,25 Sekunden lang, als MP3 (Stereo) gespeichert. Die Dateien heißen nach der MIDI-Nummer ihres Tons.

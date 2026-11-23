@@ -1,0 +1,35 @@
+Schlagzeug (kick, snare, rim, tomhi, tomlo, hat, ohat, crash, ride):
+  The Salamander Drumkit von Alexander Holm
+  Lizenz: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+  Quelle: https://archive.org/details/SalamanderDrumkit
+  Für Klangheft gekürzt, auf Mono umgerechnet, lautstärkeangepasst und als MP3 gespeichert.
+  Diese bearbeiteten Dateien stehen ebenfalls unter CC BY-SA 3.0.
+
+Percussion (clap, shaker, cowbell, congahi, congalo, bongo, clave, guiro):
+  Versilian Community Sample Library (VCSL) von Versilian Studios LLC
+  Lizenz: CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+  Quelle: https://github.com/sgossner/VCSL
+
+Spielzonen der Percussion (bongohi_/bongolo_offen/dumpf, congahi_/congalo_offen/dumpf, clave_hoch/tief,
+cowbell_mund/koerper, guiro_kurz/langsam/mittel/schnell, shaker_schuetteln), ebenfalls VCSL (CC0):
+  Bongos BongoH/BongoL Hit1 und HitMuted, Conga Conga/Tumba HitN und HitFM, Claves1/Claves2,
+  Cowbell1 Normal/Muted, Guiro Hit/Slow/Med/Fast, Shaker Large Shake1D/Shake1U.
+  Für Klangheft auf Mono umgerechnet, Stille am Anfang entfernt, an die übrigen Aufnahmen angeglichen,
+  nach höchstens 2,6 s ausgeblendet und als MP3 gespeichert.
+
+Cajón (cajbass, cajslap):
+  Versilian Community Sample Library (VCSL), CC0 1.0 (gemeinfrei)
+  Quelle: https://github.com/sgossner/VCSL (Idiophones/Struck Idiophones/Cajon)
+
+Timbales (timbale_tief-fell, timbale_tief-rand, timbale_hoch-fell, timbale_hoch-rand):
+  „50 Timbales Hits.mp3“ von hello_flowers, https://freesound.org/people/hello_flowers/sounds/41196/
+  Lizenz: CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+  Für Klangheft acht Einzelschläge herausgeschnitten (nach Tonhöhe und Obertönen hoch/tief und Fell/Rand
+  zugeordnet), auf Mono umgerechnet, an die Bongos angeglichen, ausgeblendet und als MP3 gespeichert.
+
+Slap der Congas (congahi_slap_1, congalo_slap_1):
+  „White Conga (E) - slap“ und „WhiteLowDrum(D)-Slap“ von Sassaby (LP Classic Congas),
+  https://freesound.org/people/Sassaby/sounds/512070/ und https://freesound.org/people/Sassaby/sounds/512073/
+  Lizenz: CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+  Für Klangheft auf Mono umgerechnet, Rumpeln unter 80 Hz entfernt, Stille am Anfang entfernt, sanft begrenzt
+  und an die offenen Töne angeglichen, ausgeblendet und als MP3 gespeichert.

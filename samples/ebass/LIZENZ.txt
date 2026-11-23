@@ -1,0 +1,7 @@
+E-Bass: „Baby Blue“ aus den „Black And Blue Basses“ von Karoryfer Samples (D. Smolken), 2023, gezupft.
+https://github.com/sfzinstruments/karoryfer.black-and-blue-basses
+Lizenz: Creative Commons CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+Für Klangheft: gehaltene Töne der Lautstärke „f“ (erste Aufnahme je Ton), auf den Anschlag zugeschnitten, auf knapp
+2 Sekunden gekürzt und ausgeblendet (ein Bass wird nach kurzer Zeit abgedämpft), auf ±3 Cent nachgestimmt, in der
+Lautstärke angeglichen, Spitzen weich abgerundet und als MP3 gespeichert.
+Die Dateien heißen nach der MIDI-Nummer ihres Tons (baby_28 = E₁, tiefste Basssaite).

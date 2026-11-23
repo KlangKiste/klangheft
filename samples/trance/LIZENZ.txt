@@ -1,0 +1,5 @@
+Synth: Trance (Supersaw mit 16 Stimmen) – für Klangheft selbst gebaut und erzeugt mit dem freien Synthesizer Vital
+(Matt Tytel, GPL 3.0, https://github.com/mtytel/vital), über die Python-Anbindung „vita“.
+Keine fremden Presets oder Aufnahmen. Die Dateien sind gemeinfrei: Creative Commons CC0 1.0,
+https://creativecommons.org/publicdomain/zero/1.0/
+Je Ton 1 Sekunde gehalten, 2,2 Sekunden lang, als MP3 (Stereo) gespeichert. Die Dateien heißen nach der MIDI-Nummer ihres Tons.

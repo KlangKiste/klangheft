@@ -1,0 +1,4 @@
+Xylophon- und Glockenspiel-Aufnahmen aus der Versilian Community Sample Library (VCSL)
+von Versilian Studios LLC, https://github.com/sgossner/VCSL
+Lizenz: CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+Für Klangheft gekürzt, auf Mono umgerechnet und als MP3 gespeichert.

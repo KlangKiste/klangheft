@@ -1,0 +1,5 @@
+Konzertgitarre: „Spanish classical guitar“ aus dem FreePats-Projekt, aufgenommen von Roberto (roberto@zenvoid.org), 2008/2019.
+https://freepats.zenvoid.org/Guitar/acoustic-guitar.html  ·  https://github.com/freepats/spanish-classical-guitar
+Lizenz: Creative Commons CC0 1.0 (gemeinfrei), https://creativecommons.org/publicdomain/zero/1.0/
+Für Klangheft auf den Anschlag zugeschnitten, auf 3 Sekunden gekürzt und ausgeblendet, in der Lautstärke angeglichen
+und als MP3 gespeichert. Die Dateien heißen nach der MIDI-Nummer ihres Tons (kg_40 = E, tiefste Gitarrensaite).

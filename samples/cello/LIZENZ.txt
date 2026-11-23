@@ -1,0 +1,7 @@
+Cello: „Real Cello Notes“ von flcellogrl auf Freesound, https://freesound.org/people/flcellogrl/packs/12408/
+Lizenz dort: Creative Commons Attribution 4.0 (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+Zusammengestellt in „tonejs-instruments“ von Nicholaus Brosowsky (CC BY 3.0), https://github.com/nbrosowsky/tonejs-instruments
+Für Klangheft auf den Anschlag zugeschnitten, auf 2,4 Sekunden gekürzt und ausgeblendet, in der Lautstärke angeglichen
+und als MP3 gespeichert. Die Dateien heißen nach der MIDI-Nummer ihres Tons. c′ (60) und h (59) fehlen absichtlich: Dort ist ein Oberton lauter als
+der Grundton. Diese bearbeiteten Dateien stehen
+ebenfalls unter CC BY 4.0.
