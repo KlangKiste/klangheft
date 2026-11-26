@@ -25,13 +25,13 @@
 </head>
 <body>
 <h1>Streifentest</h1>
-<p class="info">Welche Nummern zeigen schräge Streifen in den farbigen Flächen? Datum: <span id="info"></span></p>
+<p class="info">Welche Nummern zeigen schräge Streifen in den farbigen Flächen? Bitte mit Foto. Gerät: <span id="info"></span></p>
 <div id="tests" class="untersuchen"></div>
 <script>
   // Stile genau wie in Klangheft: das Stylesheet der App aus index.html übernehmen
   fetch('./').then((r) => r.text()).then((html) => {
     const m = html.match(/href="([^"]*assets\/index-[^"]*\.css)"/);
-    if (m) { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = m[1]; document.head.append(l); }
+    if (m) { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = m[1]; l.onload = zeichnen; document.head.append(l); }
   });
   document.getElementById('info').textContent = `${navigator.userAgent} · dpr ${window.devicePixelRatio}`;
   const varianten = [
@@ -46,6 +46,7 @@
   ];
   const teile = [['#d9c74a', 0, 30], ['#f09a62', 30, 12], ['#8f6ee0', 42, 38], ['#62c7c0', 80, 20]];
   const tests = document.getElementById('tests');
+  const flaechen = [];
   varianten.forEach(([cls, was, mitCanvas], i) => {
     const reihe = document.createElement('div');
     reihe.className = 'reihe';
@@ -61,14 +62,19 @@
       const cv = document.createElement('canvas');
       cv.className = 'u-welle';
       spur.append(cv);
-      requestAnimationFrame(() => {
+      flaechen.push(cv);
+    }
+  });
+  // Erst messen, wenn die Stile da sind: wie in Klangheft so breit und hoch wie die Spur
+  function zeichnen() {
+    for (const cv of flaechen) {
         const w = cv.clientWidth, hgt = cv.clientHeight;
         const dpr = Math.min(window.devicePixelRatio || 1, 16000 / w);
         cv.width = Math.round(w * dpr); cv.height = Math.round(hgt * dpr);
         const g = cv.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, w, hgt);
-      });
     }
-  });
+    document.getElementById('info').textContent += ` · Canvas ${flaechen.map((c) => c.width + '×' + c.height)[0]}`;
+  }
 </script>
 </body>
 </html>
