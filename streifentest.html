@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Klangheft – Streifentest</title>
 <style>
+  /* Die Stile der App sperren das Scrollen der Seite (dort scrollt nur #app): hier wieder freigeben */
+  html, body { height: auto !important; overflow: auto !important; overscroll-behavior: auto !important; }
   body { margin: 0; padding: 16px 24px; background: #c9a877; font-family: Andika, sans-serif; font-size: 18px; }
   h1 { font-size: 22px; margin: 0 0 4px; }
   p.info { margin: 0 0 12px; }
-  .reihe { display: flex; align-items: center; gap: 16px; margin: 0 0 10px; }
+  .reihe { display: flex; align-items: center; gap: 16px; margin: 0 0 6px; }
   .nr { flex: none; width: 56px; height: 56px; display: grid; place-items: center; background: #22292e; color: #fff; font-size: 30px; font-weight: 700; }
   .was { flex: none; width: 230px; }
   .blattwrap { flex: 1; min-width: 0; }
-  .blatt { padding: 10px; }
-  .spur-test { position: relative; height: 104px; }
+  .blatt { padding: 6px; }
+  .spur-test { position: relative; height: 72px; }
   /* Varianten */
   .v-nomix .u-teil { mix-blend-mode: normal !important; }
   .v-noclip .u-teil { clip-path: none !important; }
